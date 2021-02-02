@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>demo Links</h2>
     <ul>
       <li v-for="linkItem of routes" :key="linkItem.path">
         <router-link :to="linkItem.path">

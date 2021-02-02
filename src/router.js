@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import Hello from "@/components/HelloWorld";
+import Select from "@/components/select";
 import Menu from "@/components/menu";
 import TablePagination from "@/components/table-pagination";
 import TableRowSpan from "@/components/table-rowspan";
@@ -15,8 +16,13 @@ export const routes = [
     component: Hello
   },
   {
+    path: "/select",
+    name: "Select",
+    component: Select
+  },
+  {
     path: "/menu",
-    name: "menu",
+    name: "Menu",
     component: Menu
   },
   {
